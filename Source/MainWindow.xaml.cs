@@ -31,7 +31,7 @@ namespace Source
             if(sender is Button b)
             {
                
-                b.Background = new SolidColorBrush(Color.FromArgb(Convert.ToByte(random.Next(255)), Convert.ToByte(random.Next(255)), Convert.ToByte(random.Next(255)), Convert.ToByte(random.Next(255))));
+                b.Background = new SolidColorBrush(Color.FromRgb(Convert.ToByte(random.Next(255)), Convert.ToByte(random.Next(255)), Convert.ToByte(random.Next(255))));
                 b.BorderBrush =Brushes.Black;
                 MessageBox.Show($"{b.Name}  {b.Background.ToString()}");
             }
